@@ -24,11 +24,15 @@ module.exports = {
             ]
         }]
     },
-        plugins: [
-            new HtmlWebPackPlugin({
-                template: "./src/index.html",
-                filename: "index.html"
-            })
-        ],
-        watch: true
+    plugins: [
+        new HtmlWebPackPlugin({
+            template: "./src/index.html",
+            filename: "index.html"
+        })
+    ],
+    watch: true,
+    // instead of using relative pathes
+    resolve: {
+        modules:[path.resolve(__dirname, "src"), "node_modules"]
+    }
 }

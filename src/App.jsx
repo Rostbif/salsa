@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
+import Main from 'main.jsx';
+
 
 export default class App extends Component {
     render() {
         debugger;
-        return (<div> this is tuna 2 </div>);
+        return (<Main />);
     }
 }
