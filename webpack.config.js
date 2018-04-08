@@ -22,7 +22,29 @@ module.exports = {
                     options: {minimize: true}
                 }
             ]
-        }]
+        },
+        {
+            test: /\.(s*)css$/,
+            use:
+            [
+
+                { 
+                    loader: "style-loader"
+                },
+                {
+                    loader: "css-loader",
+                    options: {
+                        sourceMap: true,
+                        modules: true,
+                        localIdentName: "[name]__[local]__[hash:base64:5]"
+                    }
+                },
+                {
+                    loader: "sass-loader"
+                }
+            ]
+        }
+    ]
     },
     plugins: [
         new HtmlWebPackPlugin({
