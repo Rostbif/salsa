@@ -4,7 +4,7 @@ export default class Ofir extends Component {
     render() {
         return(
             <div>
-                Ofir
+                Ofir2
             </div>
         );
     }
