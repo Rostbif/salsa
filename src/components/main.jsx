@@ -1,10 +1,20 @@
-import React, {Component} from 'react';
-import style from "styles/main2.scss";
+import React, { Component } from 'react';
+import style from "styles/main";
+import MyAppBar from 'components/appBar';
+import Content from 'components/content';
+
+
+
 
 export default class Main extends Component {
 
     render() {
-        return (<div className={style.tuna}> Ofir is the king </div>);
+        return (
+            <div>
+               <MyAppBar/>
+               <Content/>
+            </div>
+        );
     }
 
 }

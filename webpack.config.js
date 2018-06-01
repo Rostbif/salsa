@@ -55,6 +55,7 @@ module.exports = {
     watch: true,
     // instead of using relative pathes
     resolve: {
-        modules:[path.resolve(__dirname, "src"), "node_modules"]
+        modules:[path.resolve(__dirname, "src"), "node_modules"],
+        extensions: ['.jsx', '.js', '.scss']
     }
 }
